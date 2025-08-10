@@ -17,7 +17,7 @@ export default function About() {
           className="flex justify-center"
         >
           <Image
-            src="/foto-perfil.jpg" 
+            src="/foto-perfil.jpeg" 
             alt="Foto de Juan Pablo"
             width={350}
             height={350}
