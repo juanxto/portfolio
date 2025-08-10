@@ -29,22 +29,31 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitting(true);
+  e.preventDefault();
+  setSubmitting(true);
 
-    // Aqui você integra com backend / Formspree / API — por agora só simula
-    console.log("Enviando form:", formData);
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-    // Simula requisição
-    setTimeout(() => {
-      setSubmitting(false);
+    if (res.ok) {
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" });
-
-      // esconde o toast após 3s
       setTimeout(() => setSuccess(false), 3000);
-    }, 900);
-  };
+    } else {
+      const data = await res.json();
+      alert(data.error || "Erro ao enviar mensagem.");
+    }
+  } catch (error) {
+    alert("Erro de conexão.");
+  } finally {
+    setSubmitting(false);
+  }
+};
+
 
   return (
     <section id="contact" className="py-20 bg-[#0F172A] text-[#F8FAFC]">

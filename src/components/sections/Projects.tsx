@@ -10,7 +10,7 @@ const projects = [
       "Calculadora de pegada de carbono para ajudar usuários a entenderem seu impacto ambiental.",
     tech: ["Next.js", "TypeScript", "TailwindCSS"],
     github: "https://github.com/seuusuario/greenprint",
-    demo: "https://greenprint.vercel.app",
+    demo: "https://greenprint.netlify.app/",
   },
   {
     title: "Marmota Mobilidade",
