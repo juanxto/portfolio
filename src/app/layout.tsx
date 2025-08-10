@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-import { Poppins } from "next/font/google"; // importa a fonte
+import { Poppins } from "next/font/google";
 
+// importa a fonte
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "700"], // pesos que vamos usar
@@ -11,9 +12,16 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Juan Pablo - Portfólio",
   description: "Desenvolvedor Full Stack",
+  icons: {
+    icon: '/iconpage.png',
+  }
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ 
+  children 
+}: { 
+  children: React.ReactNode 
+}) {
   return (
     <html lang="pt-BR">
       <body className={`${poppins.className} bg-[#0F172A] text-[#F8FAFC]`}>

@@ -17,9 +17,9 @@ export default function About() {
           className="flex justify-center"
         >
           <Image
-            src="/foto-perfil.jpeg" 
+            src="/fotoformatura.jpeg" 
             alt="Foto de Juan Pablo"
-            width={350}
+            width={600}
             height={350}
             className="rounded-lg shadow-lg border border-[#334155] object-cover"
           />

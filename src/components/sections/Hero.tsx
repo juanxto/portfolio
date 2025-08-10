@@ -38,7 +38,7 @@ export default function Hero() {
             Olá, eu sou <span className="text-[#3B82F6]">Juan Pablo</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-md">
-            Desenvolvedor Front-End apaixonado por criar experiências digitais bonitas e funcionais.
+            Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e funcionais.
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <a
