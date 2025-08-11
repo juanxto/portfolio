@@ -21,12 +21,11 @@ const projects = [
     demo: "https://m-mobilidade-32i4.vercel.app/dashboard",
   },
   {
-    title: "Meu Portfólio",
+    title: "Web Scraper – Represent CLO",
     description:
-      "Portfólio pessoal feito com Next.js, TypeScript e animações.",
-    tech: ["Next.js", "Framer Motion", "TailwindCSS"],
-    github: "https://github.com/seuusuario/portfolio",
-    demo: "/",
+      "Projeto em Python que coleta dados da seção “Mens New Arrivals” do site Represent CLO usando BeautifulSoup, salvando em arquivo estruturado.",
+    tech: ["Python 3", "requests", "BeautifulSoup"],
+    github: "https://github.com/juanxto/representWebScrap",
   },
 ];
 
