@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white px-6">
+    <section id="home" className="relative min-h-screen flex items-center justify-center h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white px-6">
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10">
         
         {/* Foto com forma geométrica */}

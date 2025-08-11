@@ -6,6 +6,7 @@ import { useState } from "react";
 const sections = [
   { id: "home", label: "Início" },
   { id: "about", label: "Sobre" },
+  { id: "skills", label: "Skills" },
   { id: "projects", label: "Projetos" },
   { id: "contact", label: "Contato" },
 ];
