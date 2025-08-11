@@ -19,6 +19,7 @@ import {
   SiPostgresql,
   SiPython,
   SiCashapp,
+  SiMysql,
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandReactNative } from "react-icons/tb";
 
@@ -36,6 +37,7 @@ export default function Skills() {
     { name: "Python", icon: <FaPython className="text-orange-400" /> },
     { name: "Java", icon: <FaJava className="text-blue-300" /> },
     { name: "C#", icon: <TbBrandCSharp className="text-purple-400" /> },
+    { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
   ];
 
   return (
