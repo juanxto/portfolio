@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white px-6">
+    <section
+      id="home"
+      className="relative flex items-center justify-center min-h-screen bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white px-6 pt-24 md:pt-0"
+    >
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10">
         
         {/* Foto com forma geométrica */}
@@ -13,18 +16,17 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative w-64 h-64 md:w-80 md:h-80"
+          className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 flex-shrink-0"
         >
           <div className="absolute inset-0 bg-gradient-to-tr from-[#3B82F6] to-blue-600 rounded-3xl rotate-6">
             <Image
-            src="/foto-perfil.png" // foto sem fundo
-            alt="Foto de perfil"
-            fill
-            className="object-cover rounded-4xl"
-            priority
-          />
+              src="/foto-perfil.png"
+              alt="Foto de perfil"
+              fill
+              className="object-cover rounded-4xl"
+              priority
+            />
           </div>
-          
         </motion.div>
 
         {/* Texto de apresentação */}
