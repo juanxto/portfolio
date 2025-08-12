@@ -5,12 +5,11 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "GreenPrint",
+    title: "Disparador De Mensagens",
     description:
-      "Calculadora de pegada de carbono para ajudar usuários a entenderem seu impacto ambiental.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
-    github: "https://github.com/seuusuario/greenprint",
-    demo: "https://greenprint.netlify.app/",
+      "Sistema automatizado para envio de mensagens no WhatsApp usando Python, Supabase e Z-API.",
+    tech: ["Python 3", "requests", "Z-API", "Supabase"],
+    github: "https://github.com/juanxto/disparadorDeMensagens",
   },
   {
     title: "Marmota Mobilidade",
