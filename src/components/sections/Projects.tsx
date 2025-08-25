@@ -5,10 +5,17 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+<<<<<<< HEAD
     title: "Disparador de Mensagens",
     description:
       "Sistema automatizado para envio de mensagens no WhatsApp usando Python, Supabase e Z-API.",
     tech: ["Python", "Z-API", "Supabase"],
+=======
+    title: "Disparador De Mensagens",
+    description:
+      "Sistema automatizado para envio de mensagens no WhatsApp usando Python, Supabase e Z-API.",
+    tech: ["Python 3", "requests", "Z-API", "Supabase"],
+>>>>>>> cb16851a214e79ff0b4db1145424849306daf3c0
     github: "https://github.com/juanxto/disparadorDeMensagens",
   },
   {
