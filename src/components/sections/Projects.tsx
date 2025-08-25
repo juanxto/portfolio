@@ -5,19 +5,18 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "GreenPrint",
+    title: "Disparador de Mensagens",
     description:
-      "Calculadora de pegada de carbono para ajudar usuários a entenderem seu impacto ambiental.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
-    github: "https://github.com/seuusuario/greenprint",
-    demo: "https://greenprint.netlify.app/",
+      "Sistema automatizado para envio de mensagens no WhatsApp usando Python, Supabase e Z-API.",
+    tech: ["Python", "Z-API", "Supabase"],
+    github: "https://github.com/juanxto/disparadorDeMensagens",
   },
   {
     title: "Marmota Mobilidade",
     description:
-      "Sistema web para gestão de falhas em mobilidade urbana.",
-    tech: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/seuusuario/marmota",
+      "Projeto em Next.js e TypeScript que implementa um sistema de relatórios e gestão de falhas, com autenticação simples, filtros por data/tipo e design responsivo, utilizando TailwindCSS.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+    github: "https://github.com/juanxto/MMobilidade",
     demo: "https://m-mobilidade-32i4.vercel.app/dashboard",
   },
   {
@@ -74,15 +73,19 @@ export default function Projects() {
                 >
                   <FaGithub /> GitHub
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#38BDF8] hover:underline"
-                >
-                  <FaExternalLinkAlt /> Demo
-                </a>
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#38BDF8] hover:underline"
+                  >
+                    <FaExternalLinkAlt /> Demo
+                  </a>
+                )}
               </div>
+
             </motion.div>
           ))}
         </div>
